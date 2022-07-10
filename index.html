@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Você está convidado!</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/normalize.css">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Você está convidado!</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/normalize.css">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </head>
-  <body>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
 
 
-    <div class="containerCv"> <!--INÍCIO CONTAINER-->
-      <div class="backgroundSky bg"><h1>Oi</h1></div>
 
+  <div class="containerCv">
+    <!--INÍCIO CONTAINER-->
+    <div class="cabecalho">
+      <div class="backgroundSky bg">
+        <div class="backgroundTree">
+
+          <div class="davi">
+            <div class="nome"></div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
+    <div class="textoArea">
+      <div class="saudacao">
+        <p>Olá<span id="nome"></span>!</p>
 
+      </div>
+      <div class="infoAniversario">
+        <p style="text-align: center;"><b>Venha comemorar meu 1º aniversário</b></p>
+        <br>
+        <div class="data">
+          <p><b>Data:</b> 30/07/2022</p>
+          <p><b>Horário:</b> 18h</p>
+          <p><b>Local:</b> Av. Afonso Pena, 1101 - Centro</p>          
 
+        </div>
+        <br>
+        <div><p style="text-align: center; font-size: 17px;"><b>Encontre pelo mapa</b></p></div>
+        <iframe class="map center"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.1423552990136!2d-45.95470098453226!3d-21.42364889201703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5f5b2663dc843%3A0xe89a87d1874aec27!2sAv.%20Afonso%20Pena%2C%201101%20-%20Parque%20das%20Na%C3%A7%C3%B5es%2C%20Alfenas%20-%20MG%2C%2037130-000!5e0!3m2!1spt-BR!2sbr!4v1657414184500!5m2!1spt-BR!2sbr"
+              height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
 
+      </div>
+
+    </div>
     
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+  </div>
+  <footer><p><b>Criado por:</b> Jonatha Teixeira, 2022.</p></footer>
+
+
+
+
+
+
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const nome = urlParams.get('nome');
+    const person = urlParams.get('person');
+    document.getElementById("nome").innerHTML = nome;
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
 </html>

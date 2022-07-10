@@ -2,33 +2,147 @@
     padding: 0;
     margin: 0;
     font-family: Poppins;
-    font-size: 18px;
+    
   }
 
+  .nome {
+    width: 100%;
+    height: 550px;
+    background: url('../images/nome.png') no-repeat center bottom;
+    margin: 0 auto;
+    padding: 5px 0px;
+    background-size: auto 100px;    
+    padding-bottom: 0px;
+    box-sizing: border-box;
+
+
+  }
+
+  body {
+    background-image: url('../images/patternbg.png');
+    background-repeat: repeat-x repeat-y;
+    background-color: #ba5624;
+    background-size: 50%;
+    
+
+  }
+.cabecalho{
+  position: relative;
+  
+}
  .containerCv {
     max-width: 800px;
     margin: 0 auto;
     padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    
-
+    padding-right: 10px;    
+    box-sizing: border-box;    
     
   }
 
+.clear {
+  clear: both;
+}
   .backgroundSky {
     width: 100%;
-    height: 600px;
-    margin: 10px auto;
+    height: 560px;
+    margin: 5px auto;
     line-height: 600px;
-    background: red url('/images/ceu.png') no-repeat center top;    
-    
-    
-        
+    background: #54A9DB url('../images/ceu.png') no-repeat center top;
     border-radius: 10px;
+    
+    z-index: 1;
+    
     
     
     
   }
 
-  
+  .backgroundTree {
+    width: 100%;
+    height: 560px;
+    margin: 10px auto;
+    line-height: 600px;
+    background: url('../images/chao.png') no-repeat center top ;
+    border-radius: 10px;
+    
+    z-index: 2;
+      
+    
+  }
+
+  .davi{
+    width:100%;
+    max-width: 566px;
+    min-width: 566px;
+    height: 600px;
+    background: url('../images/davi.png') no-repeat center;
+    background-size: 60%;    
+    margin: 0 auto;    
+    
+    z-index: 3;
+  }
+
+  .saudacao{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.56em;
+    padding: 5px 5px;
+    background-color: #54A9DB;
+    border-radius: 10px;
+    border: solid 3px #222E50;
+    color: #222E50;    
+  }
+
+  .infoAniversario {
+    width: 100%;
+    text-align: left;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    
+  }
+
+  .data{
+    width: 80%;
+    border-style: dotted;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .map{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0 auto;
+    
+
+    
+  }
+
+  .center{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  footer{
+    width: 100%;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #672809;
+    color: white;
+    margin: 10px auto 0px auto;
+    font-size: 0.87em;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 566px) {
+
+  }
