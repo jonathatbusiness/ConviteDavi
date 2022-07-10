@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -18,14 +19,15 @@
 
 
 
-  <div class="containerCv">
+  <div class="containerCv containerCv-2 containerCv-s-1">
     <!--INÍCIO CONTAINER-->
-    <div class="cabecalho">
-      <div class="backgroundSky bg">
-        <div class="backgroundTree">
+    <div class="cabecalho animate__animated animate__fadeInDown">
+      <div class="backgroundSky bg backgroundSky-2 animate__animated animate__fadeIn anim-1">
+        <div class="cloudJ"></div>
+        <div class="backgroundTree backgroundTree-2 animate__animated animate__fadeIn anim-2">
 
-          <div class="davi">
-            <div class="nome"></div>
+          <div class="davi davi-2 davi-3 Davi-s-1 animate__animated animate__pulse animate__infinite	infinite anim-3">
+            <div class="nome nome-2 animate__animated animate__fadeIn anim-4"></div>
           </div>
 
         </div>
@@ -33,18 +35,18 @@
 
     </div>
 
-    <div class="textoArea">
-      <div class="saudacao">
+    <div class="textoArea ">
+      <div class="saudacao animate__animated animate__fadeIn anim-5">
         <p>Olá<span id="nome"></span>!</p>
 
       </div>
-      <div class="infoAniversario">
-        <p style="text-align: center;"><b>Venha comemorar meu 1º aniversário</b></p>
+      <div class="infoAniversario animate__animated animate__fadeIn anim-6">
+        <p style="text-align: center;"><b>Venha comemorar meu 1º aniversário! Ficarei muito feliz com a sua presença!😃</b></p>
         <br>
         <div class="data">
-          <p><b>Data:</b> 30/07/2022</p>
-          <p><b>Horário:</b> 18h</p>
-          <p><b>Local:</b> Av. Afonso Pena, 1101 - Centro</p>          
+          <p><i class="bi bi-alarm-fill" style="color: #F26419;"></i> <b>Data:</b> 30/07/2022</p>
+          <p><i class="bi bi-calendar-check-fill" style="color: #F6AE2D;"></i> <b>Horário:</b> 18h</p>
+          <p><i class="bi bi-geo-alt-fill" style="color: #758E4F;"></i> <b>Local:</b> Av. Afonso Pena, 1101 - Centro</p>          
 
         </div>
         <br>
@@ -73,7 +75,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const nome = urlParams.get('nome');
-    const person = urlParams.get('person');
+    
     document.getElementById("nome").innerHTML = nome;
 </script>
 

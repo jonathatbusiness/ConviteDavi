@@ -16,14 +16,11 @@
 }
 
 body {
+  width: 100%;
   background-image: url("../images/patternbg.png");
   background-repeat: repeat-x repeat-y;
   background-color: #ba5624;
   background-size: 50%;
-}
-
-.cabecalho {
-  position: relative;
 }
 
 .containerCv {
@@ -45,7 +42,6 @@ body {
   line-height: 600px;
   background: #54A9DB url("../images/ceu.png") no-repeat center top;
   border-radius: 10px;
-  z-index: 1;
 }
 
 .backgroundTree {
@@ -55,18 +51,14 @@ body {
   line-height: 600px;
   background: url("../images/chao.png") no-repeat center top;
   border-radius: 10px;
-  z-index: 2;
 }
 
 .davi {
   width: 100%;
-  max-width: 566px;
-  min-width: 566px;
   height: 600px;
   background: url("../images/davi.png") no-repeat center;
-  background-size: 60%;
+  background-size: 45%;
   margin: 0 auto;
-  z-index: 3;
 }
 
 .saudacao {
@@ -76,10 +68,9 @@ body {
   font-weight: bold;
   font-size: 1.56em;
   padding: 5px 5px;
-  background-color: #54A9DB;
+  background-color: #FFF26B;
   border-radius: 10px;
-  border: solid 3px #222E50;
-  color: #222E50;
+  color: #141414;
 }
 
 .infoAniversario {
@@ -94,12 +85,17 @@ body {
 }
 
 .data {
-  width: 80%;
+  width: 90%;
+  line-height: 40px;
   border-style: dotted;
+  border-color: #fff;
+  border-width: 5px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
+  color: white;
   margin: 0 auto;
+  background-color: #222E50;
 }
 
 .map {
@@ -124,4 +120,101 @@ footer {
   color: white;
   margin: 10px auto 0px auto;
   font-size: 0.87em;
+}
+
+.anim-1 {
+  animation-delay: 0s;
+}
+
+.anim-2 {
+  animation-delay: 0.8s;
+}
+
+.anim-3 {
+  animation-delay: 1.2s;
+}
+
+.anim-4 {
+  animation-delay: 1.6s;
+}
+
+.anim-5 {
+  animation-delay: 2s;
+}
+
+.anim-6 {
+  animation-delay: 2.4s;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+  .containerCv-2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .davi-2 {
+    width: 100%;
+    height: 600px;
+    background: url("../images/davi.png") no-repeat center;
+    background-size: 80%;
+    margin: 0 auto;
+  }
+
+  .nome-2 {
+    width: 100%;
+    height: 530px;
+    background: url("../images/nome.png") no-repeat center bottom;
+    margin: 0 auto;
+    padding: 5px 0px;
+    background-size: 40%;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+  }
+
+  .backgroundSky-2 {
+    width: 100%;
+    height: 540px;
+    margin: 5px auto;
+    line-height: 600px;
+    background: #54A9DB url("../images/ceu.png") no-repeat center top;
+    border-radius: 10px;
+  }
+
+  .backgroundTree-2 {
+    width: 100%;
+    height: 540px;
+    margin: 10px auto;
+    line-height: 600px;
+    background: url("../images/chao.png") no-repeat center top;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 800px) {
+  .davi-3 {
+    max-width: 100%;
+    height: 600px;
+    background: url("../images/davi.png") no-repeat center;
+    background-size: 340px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+  .Davi-s-1 {
+    max-width: 100%;
+    height: 600px;
+    background: url("../images/davi.png") no-repeat center;
+    background-size: 340px;
+    margin: 0 auto;
+  }
+
+  .containerCv-s-1 {
+    width: 359px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
 }/*# sourceMappingURL=style.css.map */
