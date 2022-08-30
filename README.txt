@@ -2,7 +2,7 @@
 
 Hi! Thanks for your visit. I've made this project for my son 1st birthday party.
 
-I've also added an script to read URL "Search" info, so, if you add "?nome=,%20GUESTNAME" at the end of the URL, the guest name will appears in the green square, like "Hi, John!". If you send without this info, it'll appears only "Hi!".
+I've also added a script to read URL "Search" info, so, if you add "?nome=,%20GUESTNAME" at the end of the URL, the guest name will appears in the green square, like "Hi, John!". If you send without this info, it'll appears only "Hi!".
 
 ====
 #Convite de aniversário online
